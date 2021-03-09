@@ -1,0 +1,35 @@
+<svg xml:space="preserve" viewBox="0 0 100 100" y="0" x="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<style type="text/css">
+		@keyframes spin {
+		0% {
+		animation-timing-function: cubic-bezier(0.5856, 0.0703, 0.4143, 0.9297);
+		transform: rotate(0deg);
+		}
+		100% {
+		transform: rotate(360deg);
+		}
+		}
+	</style>
+	<g style="transform-origin: 50% 50%; transform: rotate(0deg) scale(0.8, 0.8);">
+		<g class="ldl-ani">
+			<g class="ldl-layer">
+				<g class="ldl-ani" style="transform-origin: 50px 50px; transform: rotate(0deg); animation: 1.11111s linear -0.833333s infinite normal forwards running spin;">
+					<circle fill="#333" r="40" cy="50" cx="50" style="fill: rgb(51, 51, 51);">
+					</circle>
+				</g>
+			</g>
+			<g class="ldl-layer">
+				<g class="ldl-ani">
+					<g>
+						<g class="ldl-layer">
+							<g class="ldl-ani" style="transform-origin: 50px 50px; transform: rotate(0deg); animation: 1.11111s linear -1.11111s infinite normal forwards running spin;">
+								<path fill="#fff" d="M50 74c-13.234 0-24-10.766-24-24h7.268c0 9.226 7.506 16.732 16.732 16.732S66.732 59.226 66.732 50 59.226 33.268 50 33.268V26c13.234 0 24 10.766 24 24S63.234 74 50 74z" style="fill: rgb(255, 255, 255);">
+								</path>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

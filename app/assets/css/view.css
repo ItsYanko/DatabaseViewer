@@ -1,0 +1,117 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    user-select: none;
+    color: #ffffff;
+    background-color: #1f2428;
+}
+
+.topbar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #24292e;
+}
+
+.topbar .back {
+    width: 50px;
+    background-color: #0366d6;
+    background-image: url(../img/back.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+    width: 100%;
+    height: calc(100vh - 50px);
+    overflow: auto;
+}
+
+.content h1 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-elm {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    width: 70%;
+    min-width: 250px;
+    max-width: 500px;
+    margin-top: 15px;
+}
+
+.form-elm * {
+    width: 50%;
+    height: 25px;
+}
+
+.form-elm *:nth-child(1) {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+    background: linear-gradient(90deg, rgb(152, 99, 187) 90%, rgb(114, 80, 193) 100%);
+}
+
+.form-elm *:nth-child(2) {
+    font-size: 15px;
+    background: #ffffff;
+}
+
+input {
+    border: 0px;
+    padding: 5px;
+}
+
+/* Navbar */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    min-width: 250px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.nav .control {
+    background-color: #0366d6;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 25px;
+    height: 20px;
+    font-size: 15.5px;
+}
+
+/* Loader */
+
+.loader {
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-image: url(../img/loader.svg);
+    background-size: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Onload handlers */
+
+body[loaded]>.loader {
+    display: none;
+}
+
+body[loaded]>.content {
+    display: unset;
+}
