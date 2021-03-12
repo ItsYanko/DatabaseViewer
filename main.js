@@ -4,9 +4,9 @@ const { app, BrowserWindow } = require('electron')
 function createWindow() {
     const win = new BrowserWindow({
         width: 800,
-        height: 600,
+        height: 500,
         minWidth: 500,
-        minHeight: 300,
+        minHeight: 500,
         maxWidth: 1000,
         maxHeight: 750,
         title: "Base de Dados do ZOO",

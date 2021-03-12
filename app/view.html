@@ -10,7 +10,11 @@
         <a href="index.html" class="back"></a>
     </div>
     <div class="content">
-        <h1>NomeTabela</h1>
+        <h1>
+            <select id="tables">
+                <option>A carregar tabelas...</option>
+            </select>
+        </h1>
         <div class="form">
             <div class="form-elm">
                 <div>Nome</div>
@@ -23,10 +27,10 @@
         </div>
         <br>
         <div class="nav">
-            <a href="#" class="control">&ll;</a>
-            <a href="#" class="control">&lt;</a>
-            <a href="#" class="control">&gt;</a>
-            <a href="#" class="control">&gg;</a>
+            <a href="#" class="control" data-btn="0">&ll;</a>
+            <a href="#" class="control" data-btn="1">&lt;</a>
+            <a href="#" class="control" data-btn="2">&gt;</a>
+            <a href="#" class="control" data-btn="3">&gg;</a>
         </div>
     </div>
     <div class="loader"></div>
