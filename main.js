@@ -1,3 +1,4 @@
+require("./server")(); // Start server
 const { app, BrowserWindow } = require('electron')
 
 function createWindow() {
