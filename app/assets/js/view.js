@@ -85,7 +85,7 @@ const table = {
 
             $(".form").html(
                 res.data.map(t =>
-                    `<div class="form-elm"><div>${data.table.fields[res.data.indexOf(t)]}</div><input type="text" value="${t}" readonly></div>`
+                    `<div class="form-elm"><div>${data.table.fields[res.data.indexOf(t)]}</div><input type="text" value="${(Number.isNaN(new Date(t).getDate()) || new Date(t).getFullYear() <= 1970) ? t : new Date(t).toLocaleString()}" readonly></div>`
                 )
             );
 
