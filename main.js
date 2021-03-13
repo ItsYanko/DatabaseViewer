@@ -16,7 +16,7 @@ function createWindow() {
     })
 
     win.loadFile('./app/index.html');
-    win.setMenu(null);
+    //win.setMenu(null);
 }
 
 app.whenReady().then(createWindow)

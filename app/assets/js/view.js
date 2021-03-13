@@ -18,7 +18,7 @@ $(window).ready(async () => {
             return error(res.message || "Erro desconhecido ao obter dados");
 
         data.tables = res.data;
-        $("#tables").html(data.tables.map(t => `<option value="${data.tables.indexOf(t)}">${t}</option>`));
+        $("#tables").html(data.tables.map((t, i) => `<option value="${i}">${t}</option>`));
 
         await table.set(0); // Select 1st table
 
@@ -84,8 +84,8 @@ const table = {
                 return error(res.message || "Erro desconhecido ao obter registo da tabela");
 
             $(".form").html(
-                res.data.map(t =>
-                    `<div class="form-elm"><div>${data.table.fields[res.data.indexOf(t)]}</div><input type="text" value="${(Number.isNaN(new Date(t).getDate()) || new Date(t).getFullYear() <= 1970) ? t : new Date(t).toLocaleString()}" readonly></div>`
+                res.data.map((t, i) =>
+                    `<div class="form-elm"><div>${data.table.fields[i]}</div><input type="text" value="${(Number.isNaN(new Date(t).getDate()) || new Date(t).getFullYear() <= 1970) ? (Number.isNaN(+t)) ? t : +t : new Date(t).toLocaleString()}" readonly></div>`
                 )
             );
 
